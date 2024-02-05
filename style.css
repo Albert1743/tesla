@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/* WHEELS TESLA */
+#wheel_one {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 335px;
+    left: 473px;
+}
+
+#wheel_two {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 335px;
+    left: 952px;
+}
+
+.wheel_tesla img {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* BOX */
+.box {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding-bottom: 60px;
+}
+
+/* MAIN BOX */
+.main_box {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 100px;
+
+    /* SPEED */
+    .speed {
+        display: flex;
+
+        .right_speed {
+            display: flex;
+            flex-direction: column-reverse;
+            padding-left: 10px;
+        }
+
+        .right_speed button {
+            all: unset;
+            cursor: pointer;
+        }
+    }
+
+    /* TEMPERATURE */
+    .temperature {
+        display: flex;
+
+        .right_temperature {
+            display: flex;
+            flex-direction: column-reverse;
+            padding-left: 10px;
+
+        }
+
+        .right_temperature button {
+            all: unset;
+            cursor: pointer;
+        }
+    }
+
+    /* WHEELS */
+    .wheels {
+        display: flex;
+
+        .right_wheels {
+            display: flex;
+            flex-direction: column-reverse;
+            padding-left: 10px;
+        }
+
+        .right_wheels button {
+            all: unset;
+            cursor: pointer;
+        }
+    }
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+/* SLIDER */
+.slider {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    background-color: gray;
+    transition: .4s;
+    -webkit-transition: .4s;
+    cursor: pointer;
+}
+
+.slider:before {
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    content: "";
+    -webkit-transition: .4s;
+    transition: .4s;
+    background-color: white;
+}
+
+input:checked+.slider {
+    background-color: #2998f4;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2998f4;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    transform: translateX(25px);
+}
+
+/* AROUNDED */
+.slider.around {
+    border-radius: 34px;
+}
+
+.slider.around:before {
+    border-radius: 50%;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="img_tesla">
+            <img src="./img/tesla.jpg" alt="">
+        </div>
+        <div class="wheel_tesla">
+            <img id="wheel_one" src="./img/wheel.png" alt="">
+            <img id="wheel_two" src="./img/wheel.png" alt="">
+        </div>
+
+
+        <div class="box">
+            <div class="box_km">
+                <p>Запас хода</p>
+                <h1><b>750</b>км</h1>
+            </div>
+
+            <div class="box_price">
+                <p>Цена</p>
+                <h1>$89,990</h1>
+            </div>
+        </div>
+
+
+        <div class="main_box">
+            <!-- SPEED -->
+            <div class="speed">
+                <div class="left_speed">
+                    <p>Скорость автомобиля</p>
+                    <h1><b>60</b> км/ч</h1>
+                </div>
+
+                <div class="right_speed">
+                    <button id="speed_plus"><img src="./img/uparrow.jpg" alt=""></button>
+                    <button id="speed_minus"><img src="./img/downarrow.jpg" alt=""></button>
+                </div>
+            </div>
+
+
+            <!-- temperature -->
+            <div class="temperature">
+                <div class="left_temperature">
+                    <p>Температура за окнами</p>
+                    <h1><b>20</b>°</h1>
+                </div>
+
+                <div class="right_temperature">
+                    <button id="temperature_plus"><img src="./img/uparrow.jpg" alt=""></button>
+                    <button id="temperature_minus"><img src="./img/downarrow.jpg" alt=""></button>
+                </div>
+            </div>
+
+
+            <!-- WHEELS -->
+            <div class="wheels">
+                <div class="left_wheels">
+                    <p>Диски</p>
+                    <h1>19</h1>
+                </div>
+
+                <div class="right_wheels">
+                    <button><img src="./img/uparrow.jpg" alt=""></button>
+                    <button><img src="./img/downarrow.jpg" alt=""></button>
+                </div>
+            </div>
+
+
+            <!-- CONDITIONER -->
+            <div class="conditioner">
+                <div class="con_text">
+                    <p id="conder">Кондиционер</p>
+                </div>
+
+                <label class="switch">
+                    <input type="checkbox" id="conditioner">
+                    <span class="slider around"></span>
+                </label>
+            </div>
+
+
+            <!-- LONG RANGE -->
+            <div class="long_range">
+                <div class="long_text">
+                    <p>Версия Long Range</p>
+                </div>
+
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider around"></span>
+                </label>
+            </div>
+
+
+            <!-- VIEW OF CAR -->
+            <div class="view_of_car">
+                <div class="car_text">
+                    <p>Вид салона</p>
+                </div>
+
+                <label class="switch" id="view">
+                    <input type="checkbox">
+
+                    <span class="slider around"></span>
+                </label>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
